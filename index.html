@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- ── Primary Meta ── -->
+    <title>Traveloop — Plan Your Perfect Trip</title>
+    <meta name="description" content="Traveloop is your AI-powered travel planning companion. Build multi-city itineraries, track budgets, discover activities and share trips — all in one place." />
+    <meta name="keywords" content="travel planner, trip itinerary, budget tracker, travel app, vacation planner, AI travel, explore destinations" />
+    <meta name="author" content="Traveloop" />
+    <meta name="theme-color" content="#0f0c29" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- ── Favicon ── -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>" />
+
+    <!-- ── Open Graph / Facebook ── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://traveloop.vercel.app/" />
+    <meta property="og:title" content="Traveloop — Plan Your Perfect Trip" />
+    <meta property="og:description" content="AI-powered travel planning. Build beautiful itineraries, track budgets and explore destinations — all in one place." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Traveloop" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ── Twitter Card ── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://traveloop.vercel.app/" />
+    <meta name="twitter:title" content="Traveloop — Plan Your Perfect Trip" />
+    <meta name="twitter:description" content="AI-powered travel planning. Build beautiful itineraries, track budgets and explore destinations." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80" />
+
+    <!-- ── Canonical ── -->
+    <link rel="canonical" href="https://traveloop.vercel.app/" />
+
+    <!-- ── Performance: DNS prefetch & preconnect ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+    <!-- ── Fonts ── -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ── Preload hero image for fastest LCP ── -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=85"
+      fetchpriority="high"
+    />
+
+    <!-- ── Structured Data (JSON-LD) ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Traveloop",
+      "url": "https://traveloop.vercel.app/",
+      "description": "AI-powered travel planning companion. Build itineraries, track budgets, discover activities and share trips.",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "screenshot": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80"
+    }
+    </script>
+
+    <!-- ── Base styles: prevent FOUC, set dark bg matching app ── -->
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
+      body {
+        background-color: #eef1f7;
+        color: #1a1a2e;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+      }
+      /* Initial loading state — prevents flash */
+      #root:empty::before {
+        content: '';
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: #eef1f7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
